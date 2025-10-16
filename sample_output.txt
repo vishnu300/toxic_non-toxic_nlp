@@ -1,0 +1,36 @@
+To develop an accurate system, the model will be trained using only a few, carefully selected data points from the given dataset
+
+
+
+(.venv) you@you-Inspiron-14-5430:~/VISHNU_am/Projects/assignment-aimleap$ python toxic_classifier_.py --comment "This sucks badly."
+5-fold F1 (mean±std): 0.933 ± 0.133
+
+=== Hold-out Evaluation (70/30) ===
+Accuracy : 1.000
+Precision: 1.000
+Recall   : 1.000
+F1-score : 1.000
+
+Detailed report:
+              precision    recall  f1-score   support
+
+   Non-toxic       1.00      1.00      1.00         3
+       Toxic       1.00      1.00      1.00         3
+
+    accuracy                           1.00         6
+   macro avg       1.00      1.00      1.00         6
+weighted avg       1.00      1.00      1.00         6
+
+Test-set predictions:
+                     text  true  pred  p_non_toxic  p_toxic
+     Well done everyone.     0     0        0.576    0.424
+    Disgusting behavior.     1     1        0.309    0.691
+I appreciate your input.     0     0        0.563    0.437
+          Go away loser.     1     1        0.295    0.705
+        Shut up already.     1     1        0.109    0.891
+    Helpful advice here.     0     0        0.610    0.390
+
+=== Prediction ===
+Comment: This sucks badly.
+Prediction: Toxic (1)
+Probability [non-toxic, toxic]: [0.101, 0.899]
